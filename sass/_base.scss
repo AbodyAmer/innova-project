@@ -1,0 +1,30 @@
+$color-primary: #1F386E;
+$color-secondary: #E52F3C;
+$color-grey-light: rgba(255,255,255,.65);
+$color-white-back: #F6F6F6;
+$color-gery-dark: rgba(150, 136, 136, 0.7);
+
+
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(8, minmax(15rem, 1fr));
+    grid-template-rows: min-content 80vh repeat(7 , min-content)  ;
+}
