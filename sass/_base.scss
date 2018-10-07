@@ -26,5 +26,5 @@ body{
 .container{
     display: grid;
     grid-template-columns: repeat(8, minmax(15rem, 1fr));
-    grid-template-rows: min-content 80vh repeat(7 , min-content)  ;
+    grid-template-rows: min-content 100vh repeat(7 , min-content)  ;
 }
