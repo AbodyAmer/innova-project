@@ -43,6 +43,7 @@
     border-radius: .3rem;
     text-transform: uppercase;
     cursor: pointer;
+    transition: all .3s;
 }
 .btn-danger:hover{
    background-color: $color-primary;
