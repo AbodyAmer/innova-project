@@ -1,0 +1,98 @@
+.projects {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(8 , 15rem);
+    justify-content: center;
+    grid-gap: 7rem 2rem;
+    padding: 8rem 0;
+    &__head{
+        grid-column: 1 / 9;
+        width: 50%;
+        font-size: 3rem;
+        transform: translateX(25%);
+    }
+}
+
+.imgsize{
+    width: 30rem;
+    height: 100%;
+}
+.first, .second, .third {
+    grid-row: 2 / 3;
+}
+.forth, .fifth, .six {
+    grid-row: 3 / 4;
+}
+.first, .forth , .firstimg , .forthimg{
+    grid-column: 2 / 4; 
+}
+
+.second, .fifth , .secondimg , .fifthimg {
+    grid-column: 4 / 6
+}
+.third, .six , .thirdimg, .sixthimg{
+    grid-column: 6 / 9;
+
+}
+
+.firstimg, .secondimg {
+    grid-row: 2 / 3;
+    width: 30rem;
+    height: 100%;
+    background-color: rgba($color-primary, .8);
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 45%;
+    opacity: 0;
+    transition: all .7s;
+   
+}
+
+.forthimg, .fifthimg{
+    grid-row: 3 / 4;
+    width: 30rem;
+    height: 100%;
+    background-color: rgba($color-primary, .8);
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 45%;
+    opacity: 0;
+    transition: all .7s;
+}
+.firstimg:hover , .secondimg:hover, .forthimg:hover , .fifthimg:hover {
+    padding-top: 25%;
+    opacity: 1;
+}
+
+.thirdimg{
+    grid-row: 2 / 3;
+    width: 30rem;
+    height: 100%;
+    background-color: rgba($color-primary, .8);
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 25%;
+    opacity: 0;
+    transition: all .7s;
+}
+
+.sixthimg{
+    grid-row: 3 / 4;
+    width: 30rem;
+    height: 100%;
+    background-color: rgba($color-primary, .8);
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 25%;
+    opacity: 0;
+    transition: all .7s;
+}
+.sixthimg:hover, .thirdimg:hover {
+    padding-top: 15%;
+    opacity: 1;
+}
+

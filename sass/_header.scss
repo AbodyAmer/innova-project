@@ -40,9 +40,18 @@
                   color: $color-primary;
                   cursor: pointer;
                   font-weight: 700;
+                  > a:visited{
+                    color: $color-primary;
+                    
+                  }
+                  > a:active{
+                    color: $color-primary;
+                    
+                  }
+                  
               }
 
-              > li:hover{
+              > li > a:hover{
                   color: $color-secondary;
               }
         }
