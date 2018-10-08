@@ -40,6 +40,9 @@
                   color: $color-primary;
                   cursor: pointer;
                   font-weight: 700;
+                  > a {
+                    color: $color-primary;
+                  }
                   > a:visited{
                     color: $color-primary;
                     

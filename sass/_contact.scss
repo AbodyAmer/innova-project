@@ -1,0 +1,94 @@
+.contact {
+     background-color: $color-primary;
+     grid-column: 1 / -1;
+     display: grid;
+     grid-template-columns: repeat(8, 14rem);
+     grid-template-rows: repeat(8, 8rem);
+     grid-gap: 2rem;
+     justify-content: center;
+
+     
+     &__info {
+         padding: 12rem 0;
+         grid-column: 7 / 9;
+         
+         > h3 {
+             font-size: 2.4rem;
+             color: #fff;
+             padding-bottom: 8rem;
+
+         }
+         > p {
+             padding-bottom: 3rem;
+             font-size: 1.4rem;
+             color: $color-gery-light-1;
+             > span {
+                 display: block;
+                 padding-bottom: 1rem;
+                 font-size: 1.7rem;
+                 color: #fff;
+             }
+         }
+     }
+     &__form{
+         grid-column: 2 / 6;
+         padding: 8rem 0;
+
+
+         
+         > h1 {
+             font-size: 3.5rem;
+             color: #fff;
+         }
+         > p{
+             color: $color-gery-light-1;
+             font-size: 1.5rem;
+             padding-bottom: 1.5rem;
+         }
+
+        > form {
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              grid-gap: 2rem 1rem;
+              margin-bottom: 7rem;
+              > input {
+                  padding: 1.5rem;
+              }
+            > textarea{
+                grid-column: 1 / -1;
+                padding: 2rem;
+            }
+              
+         }
+     }
+
+     &__media{
+         grid-row: 8 / 9;
+         grid-column: 2 / 9;
+         justify-self: center;
+         > ion-icon {
+             margin-right: 18rem;
+             color: $color-gery-light-1;
+             cursor: pointer;
+             transition: all .2s;
+         }
+         > ion-icon:hover {
+             color: #fff;
+         }
+     }
+}
+
+.message--btn {
+    color: #fff;
+    background-color: $color-primary;
+    font-size: 1.6rem;   
+    text-transform: uppercase;
+    border: .2rem #fff solid;
+    border-radius: .5rem;
+    padding: 1.5rem;   
+    transition: all .3s; 
+}
+.message--btn:hover {
+    color: $color-primary;
+    background-color: #fff;
+}
